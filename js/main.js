@@ -24,6 +24,6 @@ $(document).ready(function(){
         if (video.readyState === 4) {
             $('#preloader-overlay').css('display', 'none');
         }
-    }
+    });
     // $('#video')
 });
