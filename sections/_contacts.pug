@@ -1,0 +1,22 @@
+section.contacts
+    h1 Контакты
+    .contacts-container
+        .contacts__left-col
+            form(action="handler.php")
+                input(type="text" placeholder="Введите имя...")
+                input(type="text" placeholder="Введите e-mail...")
+                textarea(placeholder="Введите сообщение...")
+                button(type="submit").contacts__button Отправить
+        .contacts__right-col
+            iframe(src="https://yandex.ru/map-widget/v1/-/CBaK5RqnXC").yandex-map
+    .footer
+        .footer-container
+            .contacts__address
+                i.fa.fa-map-marker
+                .address
+                    p г. Санкт-Петербург,
+                    p пл. Дворцовая
+            | © site45min
+            .contacts__phone
+                i.fa.fa-phone
+                a(href="tel:+78121234567").phone +7 (812) 123-45-67

@@ -1,0 +1,363 @@
+@font-face {
+    font-family: 'ralewaylight';
+    src: url('../fonts/raleway-light-webfont.eot');
+    src: url('../fonts/raleway-light-webfont.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/raleway-light-webfont.woff2') format('woff2'),
+    url('../fonts/raleway-light-webfont.woff') format('woff'),
+    url('../fonts/raleway-light-webfont.ttf') format('truetype'),
+    url('../fonts/raleway-light-webfont.svg#ralewaylight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'ralewaysemibold';
+    src: url('../fonts/raleway-semibold-webfont.eot');
+    src: url('../fonts/raleway-semibold-webfont.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/raleway-semibold-webfont.woff2') format('woff2'),
+    url('../fonts/raleway-semibold-webfont.woff') format('woff'),
+    url('../fonts/raleway-semibold-webfont.ttf') format('truetype'),
+    url('../fonts/raleway-semibold-webfont.svg#ralewaysemibold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+html {
+    font-family: 'ralewaylight';
+    font-size: 24px;
+    color: #fff;
+}
+
+::-moz-selection { background: #32323b; }
+::selection { background: #32323b; }
+
+:focus {
+    outline: none;
+}
+
+button {
+    border: none;
+    outline: none;
+    padding: 0;
+}
+
+textarea {
+    resize: none;
+    padding: 0;
+    min-height: 350px;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+}
+
+section {
+    height: 100vh;
+    /*width: 100vw;*/
+}
+
+.intro {
+    position: relative;
+    overflow: hidden;
+}
+
+.overlay {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, .5);
+    z-index: -50;
+}
+
+.intro__video {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+    background-size: cover;
+    overflow: hidden;
+}
+
+.intro__navigation {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background: rgba(0, 0, 0, .5);
+    padding: 25px 0;
+}
+
+.intro__navigation a:after {
+    display:block;
+    content: '';
+    border-bottom: solid 1px #fff;
+    transform: scaleX(0);
+    transition: transform 250ms ease-in-out;
+}
+
+.intro__navigation a:hover:after {
+    transform: scaleX(1);
+}
+
+.intro__navigation-item {
+    margin: auto;
+}
+
+.intro h1 {
+    font-family: 'ralewaylight';
+    text-shadow: 0 5px 5px #000;
+    letter-spacing: .15em;
+    line-height: 1.2;
+    text-align: center;
+    padding: 0;
+    text-transform: none;
+}
+
+.intro__button {
+    color: #fff;
+    font-size: 1.25rem;
+    padding: 7.5px 35px;
+    background: linear-gradient(to left, rgba(50, 50, 59, .5) 50%, rgba(50, 50, 59, .75) 50%);
+    background-size: 200% 100%;
+    background-position: right bottom;
+    transition: all 250ms ease-in-out;
+    display: block;
+    margin: 35px auto;
+}
+
+.hidden {
+    visibility: hidden;
+}
+
+.intro__button:hover {
+cursor: pointer;
+    background-position:left bottom;
+}
+
+.intro-highlight {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.why-us {
+    background: url('../media/shattered-island.gif');
+    position: relative;
+}
+
+section h1 {
+    text-align: center;
+    padding: 50px 0;
+    font-family: 'ralewaysemibold';
+    text-transform: uppercase;
+}
+
+.why-us-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: row;
+}
+
+.why-us-highlighted {
+    font-family: 'ralewaysemibold';
+    display: block;
+    margin: 35px auto;
+}
+
+.why-us__left-col {
+    width: 25%;
+    text-align: center;
+}
+
+.why-us__left-col > ul {
+    display: flex;
+    flex-direction: column;
+}
+
+.why-us__right-col {
+    width: 75%;
+    margin: 35px;
+}
+
+.services {
+    background: url('../media/slide_1.jpg');
+    position: relative;
+}
+
+.slider-container {
+    position: relative;
+}
+
+.slide-1 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.slider__image, .slider__text {
+    margin: 0 30px;
+}
+
+.slider__image {
+    width: 25%;
+}
+
+.slider__text {
+    color: #b6b49d;
+    text-shadow: 0 1px 1px #000;
+}
+
+.slider__text > h2 {
+    text-transform: uppercase;
+}
+
+.slider {
+    width: 66%;
+    margin: auto;
+}
+
+.slick-prev, .slick-next {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    background: rgba(50, 50, 59, .5);
+}
+
+.slick-prev:hover, .slick-prev:focus, .slick-next:hover, .slick-next:focus {
+    background: rgba(50, 50, 59, .75);
+}
+
+.slick-next {
+    right: -100px;
+}
+
+.slick-next:before {
+    font-family: 'FontAwesome';
+    content: '\f105';
+    font-size: 80px;
+}
+
+.slick-prev {
+    left: -100px;
+}
+
+.slick-prev:before {
+    font-family: 'FontAwesome';
+    content: '\f104';
+    font-size: 80px;
+}
+
+.contacts {
+    background: #a9523c;
+    position: relative;
+}
+
+.contacts-container {
+    width: 66%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+}
+
+.contacts__left-col {
+    width: 40%;
+}
+
+.contacts__right-col {
+    margin-left: 150px;
+    width: 60%;
+}
+
+.contacts input::placeholder, .contacts input,
+.contacts textarea, .contacts textarea::placeholder {
+    color: #e8e8e8;
+}
+
+.contacts input, .contacts textarea {
+    background: #a9523c;
+    border: 1px solid #603913;
+    line-height: 50px;
+    padding: 0 20px;
+    display: block;
+    margin: 5px 0;
+    width: 100%;
+}
+
+.contacts__button {
+    font-family: 'ralewaylight';
+    color: #fff;
+    border: 1px solid #603913;
+    padding: 7.5px 35px;
+    background: linear-gradient(to left, #a9523c 50%, #682616 50%);
+    background-size: 200% 100%;
+    background-position:right bottom;
+    transition: all 250ms ease-in-out;
+    display: block;
+    margin: 35px auto;
+}
+
+.contacts__button:hover {
+    cursor: pointer;
+    background-position:left bottom;
+}
+
+.yandex-map {
+    width: 100%;
+    height: 100%;
+}
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, .5);
+    width: 100%;
+    padding: 45px 0;
+}
+
+.footer-container {
+    width: 66%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.address {
+    margin-left: 10px;
+}
+
+.phone {
+    margin-left: 10px;
+}
+
+.address p {
+    margin: 0;
+}
+
+.contacts__address {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
