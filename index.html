@@ -12,10 +12,20 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
+    <div class="preloader-overlay" id="preloader-overlay">
+      <div class="preloader loading">
+        <div class="slice"></div>
+        <div class="slice"></div>
+        <div class="slice"></div>
+        <div class="slice"></div>
+        <div class="slice"></div>
+        <div class="slice"></div>
+      </div>
+    </div>
     <div id="main">
       <section class="intro section">
         <div class="overlay"></div>
-        <video class="intro__video" autoplay loop muted>
+        <video class="intro__video" id="video" autoplay loop muted>
           <source src="media/bg-video.mp4">Ваш браузер не поддерживает видео.
         </video>
         <nav class="absolute">
@@ -32,7 +42,7 @@
       </section>
       <section class="why-us section">
         <h1>Почему мы?</h1>
-        <div class="why-us-container animated pulse">
+        <div class="why-us-container">
           <div class="why-us__left-col">
             <ul>
               <li><span class="why-us-highlighted">7 лет</span>слаженной работы</li>

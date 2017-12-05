@@ -18,4 +18,8 @@ $(document).ready(function(){
         navigation: true,
         verticalCentered: false
     });
+
+    $('#preloader-overlay').css('display', 'none');
+
+    // $('#video')
 });
