@@ -208,7 +208,6 @@ section h1 {
 
 .services h1 {
     position: absolute;
-    top: 50px;
     left: 0;
     right: 0;
     margin: auto;
@@ -376,4 +375,8 @@ section h1 {
     display: flex;
     flex-direction: row;
     align-items: center;
+}
+
+#fp-nav ul li a.active span, #fp-nav ul li:hover a.active span, .fp-slidesNav ul li a.active span, .fp-slidesNav ul li:hover a.active span, #fp-nav ul li a span, .fp-slidesNav ul li a span {
+    border: 1px solid #ddd;
 }

@@ -1,4 +1,4 @@
-section.intro
+section.intro.section
     .overlay
     video.intro__video(autoplay loop muted)
         source(src="media/bg-video.mp4")
@@ -6,11 +6,12 @@ section.intro
     nav.absolute
         ul.intro__navigation
             li.intro__navigation-item
-                a(href="#1") Почему мы?
+                a(href="#2") Почему мы?
             li.intro__navigation-item
-                a(href="#2") Наши услуги
+                a(href="#3") Наши услуги
             li.intro__navigation-item
-                a(href="#3") Контакты
+                a(href="#4") Контакты
     .intro-highlight
         h1#intro-header.animated.pulse Мы разрабатываем приложения. И делаем это лучше всех.
-        button#intro-button.intro__button.hidden Узнать больше
+        button#intro-button.intro__button.hidden
+            a(href="#2") Узнать больше
