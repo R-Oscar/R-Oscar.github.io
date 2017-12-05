@@ -19,7 +19,11 @@ $(document).ready(function(){
         verticalCentered: false
     });
 
-    $('#preloader-overlay').css('display', 'none');
-
+    var video = document.getElementById("video");
+    video.addEventListener("playing", function() {
+        if (video.readyState === 4) {
+            $('#preloader-overlay').css('display', 'none');
+        }
+    }
     // $('#video')
 });
