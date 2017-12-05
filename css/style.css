@@ -202,6 +202,22 @@ section h1 {
 .services {
     background: url('../media/slide_1.jpg');
     position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.services h1 {
+    position: absolute;
+    top: 50px;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+.wrapper {
+    display: flex;
+    flex: 1;
+    justify-content: center;
 }
 
 .slider-container {
